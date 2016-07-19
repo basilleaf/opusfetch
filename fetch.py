@@ -24,4 +24,4 @@ with open(data_file, "r") as f:
         ring_obs_id = "S_IMG_CO_ISS_{}_N.json?cols=time1,timesec1".format(img_id.split('.')[0])
         fullurl = metadata_url + ring_obs_id
         data = json.loads(requests.get(fullurl).text)
-        print ring_obs_id, data[0]['time_sec1'], data[1]['time1']
+        print "%s,%s,%s" % (img_id, data[0]['time_sec1'], data[1]['time1'])
