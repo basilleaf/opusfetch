@@ -6,16 +6,6 @@ data_file = 'imagesolutionsummary_meananom.txt'
 base_url = 'http://tools.pds-rings.seti.org/opus/api'
 metadata_url = base_url + '/metadata/'
 
-"""
-url = 'http://tools.pds-rings.seti.org/opus/api/metadata/S_IMG_CO_ISS_1459551972_N.json'
-
-
-print("Requesting", fullurl)
-r = requests.get(fullurl).json()
-
-
-"""
-
 result = {}
 with open(data_file, "r") as f:
     next(f)  # skip first line
