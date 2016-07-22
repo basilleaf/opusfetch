@@ -4,7 +4,7 @@
 
     git clone https://github.com/basilleaf/opusfetch.git
     cd opusfetch
-    virtualenv --python=/usr/local/bin/python2.7 venv --distribute
+    virtualenv venv --distribute
     source venv/bin/activate
     pip install -r requirements.txt
 
