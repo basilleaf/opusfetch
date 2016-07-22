@@ -6,7 +6,6 @@ data_file = 'imagesolutionsummary_meananom.txt'
 base_url = 'http://tools.pds-rings.seti.org/opus/api'
 metadata_url = base_url + '/metadata/'
 
-result = {}
 with open(data_file, "r") as f:
     next(f)  # skip first line
     for line in f:
